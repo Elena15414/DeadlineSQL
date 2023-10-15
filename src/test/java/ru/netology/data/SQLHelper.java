@@ -28,7 +28,7 @@ public class SQLHelper {
     }
 
     @SneakyThrows
-    public static void cleanDatabase() {
+    public static void cleanDataBase() {
         runner.execute(getConn(), "DELETE FROM auth_codes");
         runner.execute(getConn(), "DELETE FROM cards");
         runner.execute(getConn(), "DELETE FROM users");

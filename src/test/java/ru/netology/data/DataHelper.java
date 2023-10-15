@@ -32,12 +32,14 @@ public class DataHelper {
     }
 
     public static VerificationCode generateRandomVerificationCode() {
-    return new VerificationCode(faker.numerify("######"));
+        return new VerificationCode(faker.numerify("######"));
     }
+
     @Value
-    public static class VerificationCode{
+    public static class VerificationCode {
         String code;
     }
+
     @Value
     public static class AuthData {
         String login;
